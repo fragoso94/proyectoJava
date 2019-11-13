@@ -30,7 +30,7 @@ public class Main {
 					case 3: System.out.println("Books");
 					break;
 					case 4: System.out.println("Magazine");
-					default: System.out.println("Numero invalido");					
+					default: System.out.println("Opcion invalida");					
 				}
 			}catch(Exception e) {
 				System.out.println(e);
