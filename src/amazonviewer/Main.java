@@ -1,12 +1,16 @@
 package amazonviewer;
-
+import model.Movie;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
+
 
 public class Main {
 	public static void main(String[] args) {
 		
-		
+		Movie movie = new Movie();
+		movie.title = "Coco";
+		movie.duration = 90;
 		
 		int exit = 0;
 		int dato;		
