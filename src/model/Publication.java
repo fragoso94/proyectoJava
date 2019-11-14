@@ -6,14 +6,14 @@ public class Publication {
 	
 	private String title;
 	private Date editionDate;
-	private String author;
+	private String[] authors;
 	private String editorial;
 	
-	public Publication(String title, Date editionDate, String author, String editorial) {
+	public Publication(String title, Date editionDate, String[] authors, String editorial) {
 		super();
 		this.title = title;
 		this.editionDate = editionDate;
-		this.author = author;
+		this.authors = authors;
 		this.editorial = editorial;
 	}
 
@@ -32,13 +32,13 @@ public class Publication {
 	public void setEditionDate(Date editionDate) {
 		this.editionDate = editionDate;
 	}
-
-	public String getAuthor() {
-		return author;
+	
+	public String[] getAuthors() {
+		return authors;
 	}
 
-	public void setAuthor(String author) {
-		this.author = author;
+	public void setAuthors(String[] authors) {
+		this.authors = authors;
 	}
 
 	public String getEditorial() {

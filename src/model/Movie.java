@@ -33,7 +33,8 @@ public class Movie extends Film{
 	
 	@Override
 	public String toString() {
-		return "Titulo: " + getTitle() +
+		return 	"::MOVIE::" +
+				"\nTitulo: " + getTitle() +
 				"\nGenero: " + getGenre() +
 				"\n Año: " + getYear() +
 				"\n Creador: " + getCreator() +

@@ -11,6 +11,10 @@ public class Chapter extends Movie{
 		this.sessionNumber = sessionNumber;
 	}
 	
+	@Override
+	public int getId() {
+		return this.id;
+	}
 	
 	public int getSessionNumber() {
 		return sessionNumber;
@@ -19,6 +23,18 @@ public class Chapter extends Movie{
 
 	public void setSessionNumber(int sessionNumber) {
 		this.sessionNumber = sessionNumber;
+	}
+	
+	@Override
+	public String toString() {
+		return "::Chapter::" +
+				"\nTitulo: " + getTitle() +
+				"\nGenero: " + getGenre() +
+				"\n Creador: " + getCreator() +
+				"\n Duración: " + getDuration() +
+				"\n Año: " + getYear() +
+				"\n Cantidad de temporadas: " + getSessionNumber();
+		
 	}
 
 	
