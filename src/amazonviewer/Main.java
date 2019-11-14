@@ -8,18 +8,23 @@ import model.Movie;
 
 public class Main {
 	public static void main(String[] args) {
-		Movie movie = new Movie("Coco", "Animation", (short)2017);
-		//movie.title = "Abobinable"; //se puede alterar el valor de los atributos del objeto
-		movie.setTitle("Rambo");
-		movie.showData(); //llamando el metodo de Movie
-		//showMenu();
+		//Movie movie = new Movie("Coco", "Animation", (short)2017);
+		//movie.title = "Abobinable"; //se puede alterar el valor de los atributos del objeto, no es buena practica
+		//movie.setTitle("Rambo");
+		//movie.showData(); //llamando el metodo de Movie
+		//System.out.println(movie.getTitle()); //obtenemos el título del objeto movie
+		
+		Movie movie =  new Movie("Coco", "Animation", "Lee Unkrich y Adrián Molina", 120, (short)2017);
+		System.out.println(movie.toString());
+		showMenu();
 	}
 	
 	public static void showMenu() {
 		int exit = 0;
 		int dato;		
 		do {
-			System.out.println("Hola Bienvenido a Amazon Viewer\n");
+			System.out.println();
+			System.out.println("Hola Bienvenido a Amazon Viewer");
 			System.err.println("");
 			System.out.println("Selecciona el número de la opción deseada:");
 			System.out.println("1. Movies");
